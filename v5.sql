@@ -9,10 +9,7 @@ CREATE OR REPLACE PACKAGE BODY OTC_WRHS_POSITION.CFD_CASH_REPORTS_V5_PCK IS
 FUNCTION getversion RETURN VARCHAR2
 IS
 BEGIN
-       RETURN( '4.2015.09.29.16-47.ID-156.1'); /*  Report id #712 FDR Dividend Receivable/Payable extract - should only populate Open Entitlement. DB: Dmitri Matveiciuc. */
-     --RETURN( '3.2015.09.29.16-47.ID-153.1'); /*  FDR-PAS - Report id 712 FDR Dividend Receivable and Payable extract - fdr_post_fund change. DB: Dmitri Matveiciuc. */
-     --RETURN( '2.2014.09.29.16-47.ID-9.1'); /*  CF-1005 - Decommision report id #373 and send 320 to FDR - Prototype version. DB: Andrei Cataev. */
-     --RETURN( '1.2014.09.15.18-00.CF-1005.1'); /*  New: Create new package for report 320+373*. DB Dmitri Matveiciuc. */
+       null
 END;
 
 -- start section of procedures, functions and types for FDR Extract
