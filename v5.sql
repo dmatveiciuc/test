@@ -1,10 +1,5 @@
 # test
-spool otc_wh_p-b-cfd_cash_reports_v5_pck.pkg.out;
-
-SET DEFINE OFF;
-WHENEVER sqlerror EXIT sql.sqlcode;
-
-CREATE OR REPLACE PACKAGE BODY OTC_WRHS_POSITION.CFD_CASH_REPORTS_V5_PCK IS
+CREATE OR REPLACE PACKAGE BODY null IS
 --------
 FUNCTION getversion RETURN VARCHAR2
 IS
@@ -1037,7 +1032,4 @@ FUNCTION load_raw_table( p_client_id        IN VARCHAR2,
     RETURN;
   END cashflow_smry_report;
 
-END CFD_CASH_REPORTS_V5_PCK;
-/
-show errors;
-spool off;
+END 
